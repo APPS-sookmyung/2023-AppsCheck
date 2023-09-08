@@ -1,7 +1,9 @@
 import styled from "@emotion/styled";
 
 export const Layout = styled.div`
-	max-width: 600px;
-	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	width: 100%;
 	background-color: ${({ backgroundColor }) => backgroundColor};
 `;
