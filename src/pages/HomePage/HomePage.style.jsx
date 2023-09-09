@@ -5,7 +5,8 @@ export const Container = styled.div`
 `;
 
 export const Profile = styled.div`
-	border: 1px solid black;
+	display: flex;
+	gap: 13px;
 `;
 
 export const ProfileImg = styled.img`
@@ -13,9 +14,14 @@ export const ProfileImg = styled.img`
 
 	width: var(--size);
 	height: var(--size);
+	border-radius: 50%;
 `;
 
-export const ProfileInfo = styled.div``;
+export const ProfileInfo = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+`;
 
 export const ProfileName = styled.span`
 	font-size: 16px;
