@@ -5,8 +5,13 @@ const HomePage = () => {
 	return (
 		<PageLayout>
 			<S.Container>
-				<S.Title>홈 페이지</S.Title>
-				<S.SubmitButton backgroundColor={"blue"}>출석하기</S.SubmitButton>
+				<S.Profile>
+					<S.ProfileImg src="/images/img-sample-profile-img.png" alt="프로필 이미지" />
+					<S.ProfileInfo>
+						<S.ProfileName>Sakshi</S.ProfileName>
+						<S.ProfileEmail>sakshichoudhary@email.com</S.ProfileEmail>
+					</S.ProfileInfo>
+				</S.Profile>
 			</S.Container>
 		</PageLayout>
 	);
