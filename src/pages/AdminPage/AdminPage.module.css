@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 2px;
-    background-color:#FFFFFF;
+    background-color:#f7f6f6;
     width: 414px;
     height: 896px;
   }
@@ -32,7 +32,7 @@
   }
   .statusBar {
     height: 4.91%;
-    width: 99.52%;
+    width: 414px;
     top: 0;
     right: 0.48%;
     bottom: 95.09%;

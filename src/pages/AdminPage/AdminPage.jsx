@@ -5,7 +5,7 @@ const AdminPage =() => {
     return(
         <PageLayout>
 
-    <div className={styles.div}>
+    <div>
       <div className={styles.background} />
       <div className={styles.statusBar}>
         <img className={styles.connectionsIcon} alt="wifi" src="/connections.svg" />
