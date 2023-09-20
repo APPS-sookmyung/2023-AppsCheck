@@ -13,7 +13,39 @@ const HomePage = () => {
 					</S.ProfileInfo>
 				</S.Profile>
 
-				<S.Calender>캘린더 영역</S.Calender>
+				<S.Calender>
+					<S.CalenderMonth>2023년 5월</S.CalenderMonth>
+					<S.CalenderContents>
+						<S.CalenderDay>
+							<S.CalenderWeek>일</S.CalenderWeek>
+							<S.CalenderDate>7</S.CalenderDate>
+						</S.CalenderDay>
+						<S.CalenderDay>
+							<S.CalenderWeek>월</S.CalenderWeek>
+							<S.CalenderDate>8</S.CalenderDate>
+						</S.CalenderDay>
+						<S.CalenderDay>
+							<S.CalenderWeek>화</S.CalenderWeek>
+							<S.CalenderDate>9</S.CalenderDate>
+						</S.CalenderDay>
+						<S.CalenderDay>
+							<S.CalenderWeek>수</S.CalenderWeek>
+							<S.CalenderDate>10</S.CalenderDate>
+						</S.CalenderDay>
+						<S.CalenderDay>
+							<S.CalenderWeek>목</S.CalenderWeek>
+							<S.CalenderDate>11</S.CalenderDate>
+						</S.CalenderDay>
+						<S.CalenderDay>
+							<S.CalenderWeek>금</S.CalenderWeek>
+							<S.CalenderDate>12</S.CalenderDate>
+						</S.CalenderDay>
+						<S.CalenderDay>
+							<S.CalenderWeek>토</S.CalenderWeek>
+							<S.CalenderDate>13</S.CalenderDate>
+						</S.CalenderDay>
+					</S.CalenderContents>
+				</S.Calender>
 
 				<S.InformationCard>
 					<S.InformationList>

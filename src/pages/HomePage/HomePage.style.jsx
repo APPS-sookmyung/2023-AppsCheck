@@ -1,7 +1,10 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
+	display: flex;
+	flex-direction: column;
 	padding: 20px;
+	gap: 15px;
 `;
 
 export const Profile = styled.div`
@@ -35,11 +38,47 @@ export const ProfileEmail = styled.span`
 
 export const Calender = styled.div`
 	display: flex;
+	flex-direction: column;
+	/* gap: 5px; */
+	width: 100%;
+	border-radius: 11px;
+`;
+
+export const CalenderMonth = styled.div`
+	color: #2b80ff;
+	font-size: 24px;
+	align-items: center;
+	font-weight: 500;
+	padding: 10px;
+`;
+
+export const CalenderContents = styled.div`
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
-	margin: 20px 0;
-	border: 1px solid black;
+	align-content: center;
+	justify-content: space-between;
+	gap: auto;
+`;
+
+export const CalenderDay = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	gap: 10px;
+`;
+
+export const CalenderWeek = styled.div`
+	color: #878787;
+	font-style: 14px;
+	font-weight: 600;
+`;
+
+export const CalenderDate = styled.div`
+	font-style: 20px;
+	text-align: center;
+	font-weight: 600;
 `;
 
 export const InformationCard = styled.div`
