@@ -1,8 +1,8 @@
 import { PageLayout } from "../../components";
-import * as S from "./AdminPage.style";
+import * as S from "./PersonalPage.style";
 
 
-const AdminPage =() => {
+const PersonalPage =() => {
     return (
 <PageLayout>
      <S.Title>Apps Check</S.Title>
@@ -10,61 +10,61 @@ const AdminPage =() => {
         <S.calContainer>
             <S.calContent> 
                 <S.MoveDateLeft src="/svgs/svg-left-date.svg"></S.MoveDateLeft>
-                <S.calDate>2023 - 05 - 12 </S.calDate>
+                <S.calDate> 2023-1학기 </S.calDate>
                 <S.MoveDateRight src="/svgs/svg-right-date.svg"></S.MoveDateRight>
             </S.calContent>
             <S.attendContent> 
                 <S.Attendbox1>
                     <S.StatusName>출석</S.StatusName>
-                    <S.StatusCount>21</S.StatusCount>
+                    <S.StatusCount>3</S.StatusCount>
                 </S.Attendbox1>
                 <S.Attendbox2>
                     <S.StatusName>지각</S.StatusName>
-                    <S.StatusCount>2</S.StatusCount>
+                    <S.StatusCount>1</S.StatusCount>
                 </S.Attendbox2>
                 <S.Attendbox3>
                     <S.StatusName>결석</S.StatusName>
-                    <S.StatusCount>1</S.StatusCount>
+                    <S.StatusCount>2</S.StatusCount>
                 </S.Attendbox3>
                 <S.Attendbox4>
                     <S.StatusName>미정</S.StatusName>
-                    <S.StatusCount>4</S.StatusCount>
+                    <S.StatusCount>6</S.StatusCount>
                 </S.Attendbox4>
             </S.attendContent>
         </S.calContainer>
 
         <S.MainContent>
             <S.ManageBar>
-                <S.User> APPS </S.User>
+                <S.User> 김눈송 </S.User>
                 <S.Renew src="/svgs/svg-renew-icon.svg"></S.Renew>
             </S.ManageBar>
             
-            <S.Members>
-                <S.Member>
-                    <S.MemberName>김눈송1</S.MemberName>
-                    <S.AttendStatus>출석</S.AttendStatus>
-                </S.Member>
+            <S.MyStatus>
+                <S.StatusDetail>
+                    <S.AttendDate>2023-03-09</S.AttendDate>
+                    <S.MyAttendStatus>출석</S.MyAttendStatus>
+                </S.StatusDetail>
 
-                <S.Member>
-                    <S.MemberName>눈송2</S.MemberName>
-                    <S.AttendStatus>출석</S.AttendStatus>
-                </S.Member>
+                <S.StatusDetail>
+                    <S.AttendDate>2023-03-20</S.AttendDate>
+                    <S.MyAttendStatus>출석</S.MyAttendStatus>
+                </S.StatusDetail>
 
-                <S.Member>
-                    <S.MemberName>눈송3</S.MemberName>
-                    <S.AttendStatus>결석</S.AttendStatus>
-                </S.Member>
+                <S.StatusDetail>
+                    <S.AttendDate>2023-04-09</S.AttendDate>
+                    <S.MyAttendStatus>결석</S.MyAttendStatus>
+                </S.StatusDetail>
 
-                <S.Member>
-                    <S.MemberName>눈송4</S.MemberName>
-                    <S.AttendStatus>미정</S.AttendStatus>
-                </S.Member>
+                <S.StatusDetail>
+                    <S.AttendDate>2023-04-17</S.AttendDate>
+                    <S.MyAttendStatus>미정</S.MyAttendStatus>
+                </S.StatusDetail>
 
-                <S.Member>
-                    <S.MemberName>눈송5</S.MemberName>
-                    <S.AttendStatus>지각</S.AttendStatus>
-                </S.Member>
-            </S.Members>
+                <S.StatusDetail>
+                    <S.AttendDate>2023-05-01</S.AttendDate>
+                    <S.MyAttendStatus>지각</S.MyAttendStatus>
+                </S.StatusDetail>
+            </S.MyStatus>
         </S.MainContent>
      </S.Container>
      <S.Icons>
@@ -76,4 +76,4 @@ const AdminPage =() => {
 </PageLayout>
     );
 };
-export default AdminPage;
+export default PersonalPage;
