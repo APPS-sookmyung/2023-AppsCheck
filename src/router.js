@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { HomePage, LoginPage, SignUpPage, AttendanceCompletionPage, AdminPage } from "./pages";
+import { HomePage, LoginPage, SignUpPage, AttendanceCompletionPage, AdminPage,PersonalPage } from "./pages";
 
 const router = createBrowserRouter([
 	{
@@ -22,7 +22,13 @@ const router = createBrowserRouter([
 	{
 		path: "/administer",
 		element: <AdminPage />,
+	},
+	{
+		path: "/personal",
+		element: <PersonalPage />,
 	}
+
+
 ]);
 
 export default router;

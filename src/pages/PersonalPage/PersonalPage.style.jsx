@@ -142,6 +142,7 @@ export const User=styled.div`
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    width: 100px;
 `;
 
 export const ManageBar=styled.div`
@@ -155,10 +156,10 @@ export const ManageBar=styled.div`
 export const Renew =styled.img`
     width: 18px;
     height: 20px;
-    margin-left:208px;
+    margin-left: 198px;
 `;
 
-export const Members=styled.div`
+export const MyStatus=styled.div`
     gap: 20px;
     display:flex;
     flex-direction:column;
@@ -171,15 +172,15 @@ export const Members=styled.div`
     line-height: normal;
 
 `;
-export const Member = styled.div`
+export const StatusDetail = styled.div`
     font-size: 14px;
 `;
 
-export const MemberName = styled.div`
+export const AttendDate = styled.div`
     float: left;
 `;
 
-export const AttendStatus = styled.div`
+export const MyAttendStatus = styled.div`
     float: right;
 `;
 
