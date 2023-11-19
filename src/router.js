@@ -1,34 +1,39 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { HomePage, LoginPage, SignUpPage, AttendanceCompletionPage, AdminPage,PersonalPage } from "./pages";
+import {
+  HomePage,
+  LoginPage,
+  AttendanceCompletionPage,
+  AdminPage,
+  PersonalPage,
+  KakaoCallback,
+} from "./pages";
 
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <HomePage />,
-	},
-	{
-		path: "/login",
-		element: <LoginPage />,
-	},
-	{
-		path: "/signup",
-		element: <SignUpPage />,
-	},
   {
-		path: "/attendance/completion",
-		element: <AttendanceCompletionPage />,
-	},
-	{
-		path: "/administer",
-		element: <AdminPage />,
-	},
-	{
-		path: "/personal",
-		element: <PersonalPage />,
-	}
-
-
+    path: "/home",
+    element: <HomePage />,
+  },
+  {
+    path: "/",
+    element: <LoginPage />,
+  },
+  {
+    path: "/auth",
+    element: <KakaoCallback />,
+  },
+  {
+    path: "/attendance/completion",
+    element: <AttendanceCompletionPage />,
+  },
+  {
+    path: "/administer",
+    element: <AdminPage />,
+  },
+  {
+    path: "/personal",
+    element: <PersonalPage />,
+  },
 ]);
 
 export default router;
