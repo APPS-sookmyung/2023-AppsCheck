@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <KakaoCallback />,
   },
   {
-    path: "/attendance/completion",
+    path: "/checkfin",
     element: <AttendanceCompletionPage />,
   },
   {
