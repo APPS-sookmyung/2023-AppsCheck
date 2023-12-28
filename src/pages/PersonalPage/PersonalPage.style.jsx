@@ -190,18 +190,19 @@ export const AttendDate = styled.div`
 	font-size: medium;
 `;
 
+export const StatData = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 60px;
+	margin-right: 5px;
+`;
+
 export const MyAttendStatus = styled.div`
 	font-size: 16px;
 `;
 
 export const AttendTime = styled.div`
 	font-size: small;
-`;
-
-export const StatData = styled.div`
-	display: flex;
-	flex-direction: column;
-	margin-right: 5px;
 `;
 
 export const Icons = styled.div`
