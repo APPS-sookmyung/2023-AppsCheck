@@ -17,22 +17,22 @@ export const ProfileImg = styled.img`
 
 	width: var(--size);
 	height: var(--size);
-	border-radius: 50%;
 `;
 
 export const ProfileInfo = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	gap: 4px;
 `;
 
 export const ProfileName = styled.span`
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 500;
 `;
 
 export const ProfileEmail = styled.span`
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 600;
 `;
 
@@ -84,7 +84,7 @@ export const CalenderDate = styled.div`
 export const InformationCard = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 20px;
 	width: 100%;
 	border-radius: 11px;
 	border: 1px solid #dedede;
@@ -126,9 +126,29 @@ export const InformationItemContentsItem = styled.li``;
 
 export const AttendanceCheckButton = styled.button`
 	width: 100%;
-	height: 48px;
+	height: 44px;
 	border-radius: 20px;
 	background: #2b80ff;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+`;
+
+export const AbsenceCheckButton = styled.button`
+	width: 100%;
+	height: 44px;
+	border-radius: 20px;
+	background: #e65751;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+`;
+
+export const registrationScheduleButton = styled.button`
+	width: 100%;
+	height: 44px;
+	border-radius: 20px;
+	background: #868e96;
 	color: #fff;
 	font-size: 18px;
 	font-weight: 500;
