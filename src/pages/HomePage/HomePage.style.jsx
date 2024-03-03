@@ -9,12 +9,21 @@ export const Container = styled.div`
 
 export const Profile = styled.div`
 	display: flex;
-	gap: 6px;
+	gap: 13px;
+`;
+
+export const ProfileImg = styled.img`
+	--size: 60px;
+
+	width: var(--size);
+	height: var(--size);
+`;
+
+export const ProfileInfo = styled.div`
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 20px 10px;
-	border: 2px solid #2b80ff;
-	border-radius: 20px;
+	gap: 4px;
 `;
 
 export const ProfileName = styled.span`
@@ -129,7 +138,7 @@ export const AbsenceCheckButton = styled.button`
 	width: 100%;
 	height: 44px;
 	border-radius: 20px;
-	background: #ff2e2e;
+	background: #e65751;
 	color: #fff;
 	font-size: 18px;
 	font-weight: 500;
@@ -139,7 +148,7 @@ export const registrationScheduleButton = styled.button`
 	width: 100%;
 	height: 44px;
 	border-radius: 20px;
-	background: #495057;
+	background: #868e96;
 	color: #fff;
 	font-size: 18px;
 	font-weight: 500;

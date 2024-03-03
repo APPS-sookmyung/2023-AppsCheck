@@ -17,8 +17,11 @@ const HomePage = () => {
 		<PageLayout>
 			<S.Container>
 				<S.Profile>
-					<S.ProfileName>김앱스</S.ProfileName>
-					<S.ProfileEmail>sookmyungapps@gmail.com</S.ProfileEmail>
+					<S.ProfileImg src="/images/logo-apps.png" alt="프로필 이미지" />
+					<S.ProfileInfo>
+						<S.ProfileName>김앱스</S.ProfileName>
+						<S.ProfileEmail>sookmyungapps@gmail.com</S.ProfileEmail>
+					</S.ProfileInfo>
 				</S.Profile>
 
 				<S.Calender>
