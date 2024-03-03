@@ -88,6 +88,12 @@ const HomePage = () => {
 					<S.AttendanceCheckButton onClick={CheckHandler}>
 						{message || "출석체크"}
 					</S.AttendanceCheckButton>
+					<S.AbsenceCheckButton onClick={CheckHandler}>
+						{message || "결석 사유 입력"}
+					</S.AbsenceCheckButton>
+					<S.registrationScheduleButton onClick={CheckHandler}>
+						{message || "일정 등록"}
+					</S.registrationScheduleButton>
 				</S.InformationCard>
 			</S.Container>
 		</PageLayout>
