@@ -9,30 +9,21 @@ export const Container = styled.div`
 
 export const Profile = styled.div`
 	display: flex;
-	gap: 13px;
-`;
-
-export const ProfileImg = styled.img`
-	--size: 60px;
-
-	width: var(--size);
-	height: var(--size);
-	border-radius: 50%;
-`;
-
-export const ProfileInfo = styled.div`
-	display: flex;
+	gap: 6px;
 	flex-direction: column;
 	justify-content: center;
+	padding: 20px 10px;
+	border: 2px solid #2b80ff;
+	border-radius: 20px;
 `;
 
 export const ProfileName = styled.span`
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 500;
 `;
 
 export const ProfileEmail = styled.span`
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 600;
 `;
 
