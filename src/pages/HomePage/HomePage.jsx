@@ -9,7 +9,7 @@ const HomePage = () => {
 	const CheckHandler = () => {
 		setMessage("출석체크중..");
 		setTimeout(() => {
-			navigate("/checkfin");
+			navigate("/checkin");
 		}, 2000);
 	};
 
@@ -74,7 +74,7 @@ const HomePage = () => {
 
 						<S.InformationItem>
 							<S.InformationItemIcon src="/svgs/svg-location.svg" alt="위치" />
-							<S.InformationItemContents>명신관 315</S.InformationItemContents>
+							<S.InformationItemContents>명신관 417호</S.InformationItemContents>
 						</S.InformationItem>
 
 						<S.InformationItem>
@@ -91,12 +91,8 @@ const HomePage = () => {
 					<S.AttendanceCheckButton onClick={CheckHandler}>
 						{message || "출석체크"}
 					</S.AttendanceCheckButton>
-					<S.AbsenceCheckButton onClick={CheckHandler}>
-						{message || "결석 사유 입력"}
-					</S.AbsenceCheckButton>
-					<S.registrationScheduleButton onClick={CheckHandler}>
-						{message || "일정 등록"}
-					</S.registrationScheduleButton>
+					<S.AbsenceCheckButton>결석 사유 입력</S.AbsenceCheckButton>
+					<S.registrationScheduleButton>일정 등록</S.registrationScheduleButton>
 				</S.InformationCard>
 			</S.Container>
 		</PageLayout>
