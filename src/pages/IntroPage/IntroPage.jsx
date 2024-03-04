@@ -14,8 +14,7 @@ const IntroPage = () => {
 					</S.Title>
 					<S.AppsLogoImg src="/svgs/logo-apps.svg" alt="" />
 				</S.Main>
-
-				<S.LoginButton>로그인</S.LoginButton>
+				<S.LoginButton to="">로그인</S.LoginButton>
 			</S.Container>
 		</S.Layout>
 	);
