@@ -1,6 +1,6 @@
-import * as S from "./LoginPage.style";
+import * as S from "./IntroPage.style";
 
-const LoginPage = () => {
+const IntroPage = () => {
 	const Rest_api_key = "4721c4f7e6a29a07febfd392b4eaac17";
 	const redirect_uri = "http://localhost:3000/auth";
 
@@ -21,4 +21,4 @@ const LoginPage = () => {
 	);
 };
 
-export default LoginPage;
+export default IntroPage;
