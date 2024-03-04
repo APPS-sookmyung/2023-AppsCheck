@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import * as S from "./IntroPage.style";
 
 const IntroPage = () => {
 	const Rest_api_key = "4721c4f7e6a29a07febfd392b4eaac17";
 	const redirect_uri = "http://localhost:3000/auth";
+
+	const navigate = useNavigate();
+
+	const navigateToLogin = () => {
+		navigate("/login");
+	};
 
 	return (
 		<S.Layout>
@@ -14,7 +21,7 @@ const IntroPage = () => {
 					</S.Title>
 					<S.AppsLogoImg src="/svgs/logo-apps.svg" alt="" />
 				</S.Main>
-				<S.LoginButton to="">로그인</S.LoginButton>
+				<S.LoginButton onClick={navigateToLogin}>로그인</S.LoginButton>
 			</S.Container>
 		</S.Layout>
 	);
