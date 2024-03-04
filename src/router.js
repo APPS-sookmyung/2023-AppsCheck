@@ -1,27 +1,32 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import {
-	HomePage,
+	IntroPage,
 	LoginPage,
+	HomePage,
 	AttendanceCompletionPage,
 	AdminPage,
 	PersonalPage,
-	KakaoCallback,
+	// KakaoCallback,
 } from "./pages";
 
 const router = createBrowserRouter([
 	{
-		path: "/home",
-		element: <HomePage />,
+		path: "/",
+		element: <IntroPage />,
 	},
 	{
-		path: "/",
+		path: "/login",
 		element: <LoginPage />,
 	},
 	{
-		path: "/auth",
-		element: <KakaoCallback />,
+		path: "/home",
+		element: <HomePage />,
 	},
+	// {
+	// 	path: "/auth",
+	// 	element: <KakaoCallback />,
+	// },
 	{
 		path: "/checkin",
 		element: <AttendanceCompletionPage />,

@@ -1,75 +1,94 @@
 import styled from "@emotion/styled";
-import { PageLayout } from "../../components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 100px;
-  height: 100%;
-  padding: 0 20px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	padding: 0 20px;
+	left: 50%; // 가운데에 배치
+	transform: translate(-50%, 0);
+	flex-direction: column;
+	background-color: #f7f7f7;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 `;
 
-export const Main = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 61px;
+export const TitleWrap = styled.h1`
+	margin-top: 87px;
+	font-size: 26px;
+	font-weight: 700;
+	color: #262626;
+	display: flex;
 `;
 
-export const Title = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+export const Content = styled.div`
+	gap: 20px;
+	margin-bottom: 20px;
 `;
 
-export const Layout = styled(PageLayout)`
-  background: linear-gradient(
-    205deg,
-    rgba(43, 128, 255, 0.21) -0.82%,
-    rgba(7, 106, 255, 0.43) 10.35%,
-    rgba(2, 103, 255, 0.71) 23.72%,
-    #06f 53.77%,
-    rgba(0, 102, 255, 0.83) 77.65%,
-    rgba(0, 102, 255, 0.5) 95.03%
-  );
+export const ContentWrap = styled.div`
+	margin-top: 26px;
+	flex: 1; //남는 공간을 차지하도록 함
 `;
 
-export const Name = styled.h1`
-  color: #fff;
-  text-align: center;
-  font-size: 50px;
-  font-weight: 800;
+export const InputTitle = styled.h3`
+	font-size: 12px;
+	font-weight: 600;
+	color: #262626;
 `;
 
-export const Contents = styled.span`
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
+export const InputWrap = styled.div`
+	display: flex;
+	border-radius: 8px;
+	padding: 16px;
+	margin-top: 8px;
+	background-color: #fff;
+	border: 1px solid #e2e0e0;
+	font-size: 20px;
+
+	// 포커스가 있는 경우의 스타일
+	&:focus-within {
+		border: 1px solid #2b80ff;
+	}
 `;
 
-export const AppsLogoImg = styled.img`
-  width: 125px;
-  height: 142px;
+export const Input = styled.input`
+	width: 100%;
+	outline: none;
+	border: none;
+	height: 17px;
+	font-size: 14px;
+	font-weight: 400;
+
+	&::placeholder {
+		color: #dadada;
+	}
 `;
 
-export const KakaoLoginButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  width: 60%;
-  height: 48px;
-  border-radius: 20px;
-  background-color: #f7e600;
-  margin-left: 70px;
+export const ErrorMessageWrap = styled.div`
+	margin-top: 8px;
+	color: #ef0000;
+	font-size: 12px;
 `;
 
-export const KakaoLogoImg = styled.img`
-  width: 22px;
-`;
+export const Button = styled.button`
+	width: 100%;
+	height: 48px;
+	border: none;
+	font-weight: 700; // 700이 bold
+	background-color: #2b80ff;
+	border-radius: 64px;
+	color: white;
+	margin-bottom: 16px;
+	cursor: pointer;
 
-export const KakaoLogoButtonText = styled.span`
-  font-size: 18px;
-  font-weight: 500;
+	// 버튼이 활성화되지 않았을때의 상태를 지정해줌
+	&:disabled {
+		background-color: #dadada;
+		color: #fff;
+	}
 `;
