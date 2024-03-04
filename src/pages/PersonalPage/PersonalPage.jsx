@@ -115,12 +115,6 @@ const PersonalPage = () => {
 					</S.MyStatus>
 				</S.MainContent>
 			</S.Container>
-			<S.Icons>
-				<S.IconContent src="/svgs/svg-nav-icon1.svg"></S.IconContent>
-				<S.IconContent src="/svgs/svg-nav-icon2.svg"></S.IconContent>
-				<S.IconContent src="/svgs/svg-nav-icon3.svg"></S.IconContent>
-				<S.IconContent src="/svgs/svg-nav-icon4.svg"></S.IconContent>
-			</S.Icons>
 
 			{isModalOpen && (
 				<S.ModalOverlay>

@@ -205,12 +205,6 @@ export const AttendTime = styled.div`
 	font-size: small;
 `;
 
-export const Icons = styled.div`
-	gap: 10px;
-	display: flex;
-	justify-content: space-around;
-`;
-
 export const IconContent = styled.img`
 	width: 32px;
 	height: 32px;
