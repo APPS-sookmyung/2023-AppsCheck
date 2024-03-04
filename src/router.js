@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import TabBar from "./components/TabBar";
 
 import {
 	IntroPage,
@@ -15,19 +16,38 @@ import {
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <IntroPage />,
+		element: (
+			<>
+				<IntroPage />
+			</>
+		),
 	},
 	{
 		path: "/login",
-		element: <LoginPage />,
+		element: (
+			<>
+				<LoginPage />
+				<TabBar />
+			</>
+		),
 	},
 	{
 		path: "/signup",
-		element: <SignupPage />,
+		element: (
+			<>
+				<SignupPage />
+				<TabBar />
+			</>
+		),
 	},
 	{
 		path: "/home",
-		element: <HomePage />,
+		element: (
+			<>
+				<HomePage />
+				<TabBar />
+			</>
+		),
 	},
 	// {
 	// 	path: "/auth",
@@ -35,15 +55,30 @@ const router = createBrowserRouter([
 	// },
 	{
 		path: "/checkin",
-		element: <AttendanceCompletionPage />,
+		element: (
+			<>
+				<AttendanceCompletionPage />
+				<TabBar />
+			</>
+		),
 	},
 	{
 		path: "/administer",
-		element: <AdminPage />,
+		element: (
+			<>
+				<AdminPage />
+				<TabBar />
+			</>
+		),
 	},
 	{
 		path: "/personal",
-		element: <PersonalPage />,
+		element: (
+			<>
+				<PersonalPage />
+				<TabBar />
+			</>
+		),
 	},
 	{
 		path: "/profile",
