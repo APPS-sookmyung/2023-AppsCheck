@@ -69,7 +69,7 @@ export default function SignupPage() {
 									name="name"
 									id="name"
 									minlength="5"
-									placeholder="김앱스"
+									placeholder="회장"
 								></S.ContentInput>
 							</S.ContentInputWrap>
 						</S.Content>
@@ -165,15 +165,19 @@ export default function SignupPage() {
 				</S.Button>
 			</S.SignupContainer>
 
-			{/* <div class="sign-up-completion-modal-overlay">
-				<div class="sign-up-completion-modal">
-					<h2>가입 성공!</h2>
-					<p>AppsCheck 가입을 축하합니다!!</p>
-					<div class="sign-up-completion-modal-button-wrapper">
-						<button onclick="handleSignUpCompletionModalCloseButtonClick()">닫기</button>
-					</div>
-				</div>
-			</div> */}
+			<S.SignupCompletionModalOverlay>
+				<S.SignupCompletionModal>
+					<S.SignupCompletionTitle>가입 성공!</S.SignupCompletionTitle>
+					<S.SignupCompletionDescription>
+						AppsCheck 가입을 축하합니다!!
+					</S.SignupCompletionDescription>
+					<S.SignupCompletionModalButtonWrapper>
+						<S.SignUpCompletionModalCloseButton onclick="handleSignUpCompletionModalCloseButtonClick()">
+							닫기
+						</S.SignUpCompletionModalCloseButton>
+					</S.SignupCompletionModalButtonWrapper>
+				</S.SignupCompletionModal>
+			</S.SignupCompletionModalOverlay>
 		</S.Container>
 	);
 }

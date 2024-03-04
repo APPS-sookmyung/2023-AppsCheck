@@ -105,3 +105,62 @@ export const Button = styled.button`
 		color: #fff;
 	}
 `;
+
+export const SignupCompletionModalOverlay = styled.div`
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(1px);
+`;
+
+export const SignupCompletionModal = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	width: 100%;
+	max-width: 300px;
+	padding: 20px;
+	border-radius: 20px;
+`;
+
+export const SignupCompletionTitle = styled.h3``;
+
+export const SignupCompletionDescription = styled.p``;
+
+export const SignupCompletionModalButtonWrapper = styled.div`
+	display: flex;
+	justify-content: right;
+	width: 100%;
+`;
+
+export const SignUpCompletionModalCloseButton = styled.div``;
+
+// .sign-up-page {
+// 	position: relative;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+// .sign-up-completion-modal-overlay.open {
+// 	display: flex;
+// }
+
+// .sign-up-completion-modal-button-wrapper > button {
+// 	background-color: white;
+// 	padding: 5px;
+// 	border-radius: 5px;
+// 	border: 1px solid gray;
+// }
