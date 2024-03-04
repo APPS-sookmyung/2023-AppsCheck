@@ -10,6 +10,9 @@ const IntroPage = () => {
 	const navigateToLogin = () => {
 		navigate("/login");
 	};
+	const navigateToSignup = () => {
+		navigate("/signup");
+	};
 
 	return (
 		<S.Layout>
@@ -21,7 +24,11 @@ const IntroPage = () => {
 					</S.Title>
 					<S.AppsLogoImg src="/svgs/logo-apps.svg" alt="" />
 				</S.Main>
-				<S.LoginButton onClick={navigateToLogin}>로그인</S.LoginButton>
+
+				<S.Sub>
+					<S.LoginButton onClick={navigateToLogin}>로그인</S.LoginButton>
+					<S.SignupButton onClick={navigateToSignup}>회원가입</S.SignupButton>
+				</S.Sub>
 			</S.Container>
 		</S.Layout>
 	);
