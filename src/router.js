@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import {
 	IntroPage,
 	LoginPage,
+	SignupPage,
 	HomePage,
 	AttendanceCompletionPage,
 	AdminPage,
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
 	{
 		path: "/login",
 		element: <LoginPage />,
+	},
+	{
+		path: "/signup",
+		element: <SignupPage />,
 	},
 	{
 		path: "/home",

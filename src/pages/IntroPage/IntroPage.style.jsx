@@ -53,8 +53,13 @@ export const AppsLogoImg = styled.img`
 	height: 142px;
 `;
 
-export const LoginButton = styled.button`
+export const Sub = styled.div`
 	display: flex;
+	flex-direction: column;
+	gap: 20px;
+`;
+
+export const LoginButton = styled.button`
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
@@ -64,4 +69,9 @@ export const LoginButton = styled.button`
 	background-color: #fff;
 	font-size: 18px;
 	font-weight: 500;
+`;
+
+export const SignupButton = styled.button`
+	text-decoration: underline;
+	color: #fff;
 `;
