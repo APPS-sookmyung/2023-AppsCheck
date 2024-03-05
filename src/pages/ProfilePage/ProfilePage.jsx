@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import * as S from "./SignupPage.style";
+import * as S from "./ProfilePage.style";
 
-export default function SignupPage() {
+export default function ProfilePage() {
 	const [email, setEmail] = useState("");
 	const [pw, setPw] = useState("");
 	const [emailValid, setEmailValid] = useState(false);
@@ -23,33 +23,26 @@ export default function SignupPage() {
 
 		setPw(passwordValue);
 		setPwValid(regex.test(passwordValue));
+
+		// 비밀번호가 변경될 때마다 비밀번호 확인 상태 초기화
+		setPwMatch(false);
 	};
 
 	const handlePasswordConfirm = (e) => {
-		const confirmPassword = e.target.value;
-		setPwMatch(confirmPassword === pw);
+		const confirmPw = e.target.value;
+
+		// 비밀번호 확인 값과 비밀번호 값이 일치하는지 확인
+		setPwMatch(confirmPw === pw);
 	};
 
 	useEffect(() => {
-		if (emailValid && pwValid && pwMatch) {
-			setNotAllow(false);
-		} else {
-			setNotAllow(true);
-		}
+		setNotAllow(!(emailValid && pwValid && pwMatch));
 	}, [emailValid, pwValid, pwMatch]);
-
-	const handleSignUpButtonClick = () => {
-		// 가입하기 버튼 클릭 시 수행할 작업을 여기에 추가
-	};
-
-	const handleSignUpCompletionModalCloseButtonClick = () => {
-		// 가입 완료 모달 닫기 버튼 클릭 시 수행할 작업을 여기에 추가
-	};
 
 	return (
 		<S.Container>
 			<S.SignupContainer>
-				<S.SignupTitle>회원 가입</S.SignupTitle>
+				<S.SignupTitle>회원 정보</S.SignupTitle>
 
 				<S.SignupContent>
 					<S.Divider>
@@ -171,26 +164,13 @@ export default function SignupPage() {
 					</S.Content>
 				</S.SignupContent>
 
-				<S.Button id="sign-up-button" onClick={handleSignUpButtonClick} disabled={notAllow}>
-					가입하기
+				<S.Button id="profile-modify-button" disabled={notAllow}>
+					수정
+				</S.Button>
+				<S.Button id="member-Withdrawal-button" disabled={notAllow}>
+					회원탈퇴
 				</S.Button>
 			</S.SignupContainer>
-
-			<S.SignupCompletionModalOverlay>
-				<S.SignupCompletionModal>
-					<S.SignupCompletionTitle>가입 성공!</S.SignupCompletionTitle>
-					<S.SignupCompletionDescription>
-						AppsCheck 가입을 축하합니다!!
-					</S.SignupCompletionDescription>
-					<S.SignupCompletionModalButtonWrapper>
-						<S.SignUpCompletionModalCloseButton
-							onClick={handleSignUpCompletionModalCloseButtonClick}
-						>
-							닫기
-						</S.SignUpCompletionModalCloseButton>
-					</S.SignupCompletionModalButtonWrapper>
-				</S.SignupCompletionModal>
-			</S.SignupCompletionModalOverlay>
 		</S.Container>
 	);
 }
