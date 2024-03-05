@@ -11,7 +11,7 @@ export default function TabBar() {
 				<Link to="/personal">
 					<S.Icon src="/svgs/tab-bar-icon2.svg" alt="tabIcon2" />
 				</Link>
-				<Link to="/setting">
+				<Link to="/profile">
 					<S.Icon src="/svgs/tab-bar-icon3.svg" alt="tabIcon3" />
 				</Link>
 			</S.IconContainer>
