@@ -1,10 +1,23 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-	height: 50px;
-	background-color: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	width: 100%;
+	background-color: #f7f7f7;
+	margin: 0 auto;
 `;
 
-export const Icon = styled.div`
-	height: 10px;
+export const IconContainer = styled.div`
+	display: flex;
+	align-items: center;
+	margin: 30px;
+	gap: 70px;
+`;
+
+export const Icon = styled.img`
+	height: 30px;
+	cursor: pointer;
 `;
