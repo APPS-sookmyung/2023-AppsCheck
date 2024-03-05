@@ -8,6 +8,7 @@ import {
 	AttendanceCompletionPage,
 	AdminPage,
 	PersonalPage,
+	ProfilePage,
 	// KakaoCallback,
 } from "./pages";
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
 	{
 		path: "/personal",
 		element: <PersonalPage />,
+	},
+	{
+		path: "/profile",
+		element: <ProfilePage />,
 	},
 ]);
 
